@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>{{ site.name }}{% if page.title %} | {{ page.title }} {% endif %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ '/static/css/style.css' | prepend: site.baseurl}}" />
+        <meta name="description" content="{% if page.description %}{{page.description}}{% else %}{{site.description}}{% endif %}"/>
+        <meta name="author" content="{{site.author}}"/>
+        <link rel="author" href="humans.txt"/>
+        <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{ '/feed.xml' | prepend: site.baseurl}}" />
+
+        <!-- Page Meta for SEO and Social Sharing -->
+        <!-- Default Facebook Open Graph tags -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="{{site.url}}">
+        <meta property="og:title" content="{{ site.name }}{% if page.title %} | {{ page.title }}{% endif %}">
+        <meta property="og:description" content="{% if page.description %}{{page.description}}{% else %}{{site.description}}{% endif %}">
+        <meta property="og:image" content="{{site.url}}{{site.baseurl}}{% if page.image %}{{page.image}}{% else %}{{site.image}}{% endif %}">
+        <meta property="og:image:alt" content="williamhuster.com">
+
+        <!-- Default Twitter Card tags (additive to FB tags) -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:domain" value="{{site.url}}" />
+        <meta name="twitter:title" value="{{ site.name }}{% if page.title %} | {{ page.title }}{% endif %}" />
+        <meta name="twitter:description" value="{% if page.description %}{{page.description}}{% else %}{{site.description}}{% endif %}" />
+        <meta name="twitter:image" content="{{site.url}}{{site.baseurl}}{% if page.image %}{{page.image}}{% else %}{{site.image}}{% endif %}" />
+        <meta name="twitter:url" value="{{site.url}}" />
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="{{ '/static/images/favicon.png' | prepend: site.baseurl }}" />
+
+        <!-- Apple Touch Icons -->
+        <link rel="apple-touch-icon" href="{{site.baseurl}}/static/images/apple-touch-icon.png">
+        <link rel="apple-touch-icon-precomposed" href="{{site.baseurl}}/static/images/apple-touch-icon.png">
+
+        <!-- Android icon -->
+        <link rel="icon" href="{{site.baseurl}}/static/images/apple-touch-icon.png">
+
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="row-wrap">
+                <h4>DND in DC!</h4>
+            </div>
+        </header>
+
+        {{ content }}
+
+        <footer class="footer">
+            <address class="row-wrap footer__address">
+                <p>
+                    &copy; <time>{{ site.time | date: '%Y' }}</time>
+                    {{site.author}} |
+                    <a href="mailto:{{site.author_email}}" class="footer__link">
+                        {{site.author_email}}
+                    </a>
+                </p>
+            </address>
+        </footer>
+        <!-- <script src="{{site.baseurl}}/scripts.js"></script> -->
+        {% if jekyll.environment == 'production' %}
+        {% include analytics.html %}
+        {% endif %}
+    </body>
+
+</html>
