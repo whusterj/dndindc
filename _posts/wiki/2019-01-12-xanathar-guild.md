@@ -2,12 +2,12 @@
 layout: page
 title: The Xanathar Guild
 date: 2019-01-12
-description: The Xanathar Guild ("Xanths") are one of several major factions vying for power in Waterdep. They are a chaotic criminal organization overseen by a demented Beholder known as The Xanathar.
+description: The Xanathar Guild ("Xanths") are one of several major factions vying for power in Waterdeep. They are a chaotic criminal organization overseen by a demented Beholder known as The Xanathar.
 category: wiki
 tags: factions
 ---
 
-The Xanathar Guild ("Xanths") are one of several major factions vying for power in Waterdep. They are a chaotic criminal organization overseen by a demented Beholder known as [The Xanathar][the-xanathar].
+The Xanathar Guild ("Xanths") are one of several major factions vying for power in Waterdeep. They are a chaotic criminal organization overseen by a demented Beholder known as [The Xanathar][the-xanathar].
 
 You first encountered The Xanathar Guild when they started a bar fight with the [Zhentarim][zhentarim] agent Yagra [Floon][floon], believing him to be [Renaer Neverember][renear-neverember]. Ostensibly, the
 

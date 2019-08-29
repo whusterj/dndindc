@@ -2,12 +2,12 @@
 layout: page
 title: Zhentarim
 date: 2019-01-12
-description: The Zhentarim ("Zhents") are one of several major factions vying for power in Waterdep. They are widely recognized as a criminal organization.
+description: The Zhentarim ("Zhents") are one of several major factions vying for power in Waterdeep. They are widely recognized as a criminal organization.
 category: wiki
 tags: factions
 ---
 
-The Zhentarim ("Zhents") are one of several major factions vying for power in Waterdep. They are widely recognized as a criminal organization.
+The Zhentarim ("Zhents") are one of several major factions vying for power in Waterdeep. They are widely recognized as a criminal organization.
 
 Unlike [The Xanathar Guild][xanathar-guild], but they retain a sense of order and justice.
 
